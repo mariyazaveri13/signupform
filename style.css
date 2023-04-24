@@ -1,0 +1,118 @@
+:root{
+    --dark-blue:#0B2447;
+    --semi-dark-blue: #19376D;
+    --light-blue: hsl(228, 43%, 54%);
+    --baby-blue:#A5D7E8;
+
+    --light:#E3FDFD;
+    --dark:#f6ffff;
+}
+
+body{
+    all:unset;
+    font-family: 'Jost',Arial, Helvetica, sans-serif;
+    background: var(--light);
+    box-sizing: border-box;
+}
+
+.body-content{
+    display: flex;
+}
+
+.img{
+    flex: 2;
+    background-image: url("images/mountains.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-content{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.footer{
+    flex:2;
+}
+
+.header{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--semi-dark-blue);
+    padding: clamp(1em,40px,1em);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: baseline;
+    align-items: end;
+}
+
+
+.form-main{
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.19);   
+    background: var(--dark); 
+    flex:1;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.error{
+    outline: none;
+    border: 3px solid red;
+    padding: 5px;
+    font-family: 'Jost';
+    font-size: 1.5em;
+    border-radius: 10px;
+    background: var(--dark);
+    color: inherit;
+}
+
+.input-class{
+    outline: none;
+    border: 1px solid var(--baby-blue);
+    padding: 5px;
+    font-family: 'Jost';
+    font-size: 1.5em;
+    border-radius: 10px;
+    background: var(--light);
+    color: inherit;
+}
+
+.input-class:focus{
+    border: 3px solid var(--semi-dark-blue);
+}
+
+.inputs{
+    color: var(--semi-dark-blue);
+    margin: 25px;
+}
+
+
+.link{
+    margin-left: 50px;
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+}
+
+.innertext{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--semi-dark-blue);
+    padding: clamp(1em,40px,1em);
+    box-sizing: border-box;
+}
+button{
+    padding: 13px;
+    border-radius: 10px;
+    background: var(--dark-blue);
+    color: var(--baby-blue);
+    font-weight: bold;
+    margin: 50px;
+    cursor: pointer;
+}

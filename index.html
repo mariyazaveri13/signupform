@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost" />
+</head>
+<body>
+    <div class="body-content">
+        <div class="img">
+        </div>
+        <div class="form-content">
+            <div class="header">
+                This is not a real online service! You know you need something like this in your life to help you realise
+                your deepest dreams. <br>
+                Sign up now to get started. <br><br>
+                You know you want to.
+            </div>
+            <div class="form-main">
+                <form>
+                <div class="row innertext">
+                    Let's do this!!
+                </div>
+                <div class="row">
+                    <div class="inputs">
+                        <label for="firstName">FIRST NAME</label><br>
+                        <input type="text" id="firstName" name="firstName" required class="input-class">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="lastName">LAST NAME</label><br>
+                        <input type="text" id="lastName" name="lastName" required class="input-class">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="email">EMAIL</label><br>
+                        <input type="email" id="email" name="email" required class="input-class"> 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="inputs">
+                        <label for="phone">PHONE NUMBER</label><br>
+                        <input type="tel" id="phone" name="phone" required class="input-class">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" id="password" name="password" required class="input-class">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="confirmPwd">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confirmPwd" name="confirmPwd" required class="input-class"><br>
+                        <span class="warning" id="warn" style="display: none; color:red">Password and confirm password are not same</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit">Create Account</button><br>
+                <div class="link">Already have an Account? <b><a href="#">Log in</a></b></div>
+                <div class="link">Made by <b><a href="https://twitter.com/mariyacodes">Mariya</a></b></div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
